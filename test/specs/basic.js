@@ -9,7 +9,7 @@ describe('webdriver.io page', () => {
     });
 
     it('should search a product on amazon', async() => {
-      
+      //using async execution
       const search= await $('#gh-ac') ;//search field
       
       const searchButton= await $('#gh-btn');//search button
@@ -20,4 +20,9 @@ describe('webdriver.io page', () => {
       await expect(search).toHaveValue('mobile phone');
 
     });
+    it('should add product', async() => {
+        //comment addedd
+  
+      });
+
 });
